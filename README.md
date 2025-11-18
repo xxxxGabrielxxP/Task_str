@@ -1,2 +1,6 @@
 # Task_str
-Aplicar kNN para clustering en demanda eléctrica
+El análisis de curvas de carga eléctrica es una herramienta fundamental para la planificación, operación y evaluación del comportamiento de los sistemas eléctricos. La creciente disponibilidad de datos horarios y la necesidad de automatizar su procesamiento hace imprescindible el uso de plataformas que permitan analizar, limpiar, visualizar, modelar y predecir patrones de consumo de manera eficiente. 
+
+Este proyecto integra una interfaz interactiva desarrollada en Streamlit, diseñada para facilitar el estudio de perfiles horarios de demanda eléctrica. La aplicación recibe como entrada archivos CSV o Excel que contienen series temporales con marcas de tiempo y potencias demandadas, ejecutando posteriormente una limpieza automática de valores extremos mediante el método intercuartílico (IQR). A continuación, genera curvas diarias y perfiles promedio por hora, permitiendo una exploración visual detallada del comportamiento energético. 
+
+Finalmente, incorpora un modelo de regresión basado en k-Nearest Neighbors (k-NN) con una partición fija de entrenamiento/prueba del 80/20, que permite estimar y comparar los perfiles horarios de un día específico. Este enfoque proporciona una herramienta flexible para análisis exploratorio, predicción básica y soporte en la toma de decisiones relacionadas con la gestión de la demanda eléctrica.
