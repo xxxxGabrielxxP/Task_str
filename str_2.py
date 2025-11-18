@@ -7,7 +7,6 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsRegressor
 import plotly.express as px
 from sklearn.model_selection import train_test_split
-import pywt  # <-- para CWT (aunque aquí no lo estamos usando aún)
 
 st.title(" k-NN Regression / NN-based clustering")
 
@@ -205,3 +204,4 @@ if archivo is not None:
     )
 
     st.plotly_chart(fig_knn, use_container_width=True)
+
