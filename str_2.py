@@ -6,7 +6,6 @@ from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsRegressor
 import plotly.express as px
-from tensorflow.keras import layers, models
 from sklearn.model_selection import train_test_split
 import pywt  # <-- para CWT (aunque aquí no lo estamos usando aún)
 
@@ -204,4 +203,5 @@ if archivo is not None:
         title=f"Perfil real vs estimado por k-NN - Día {dia_seleccionado}",
         labels={"value": "kWtot (kW)", "variable": "Serie"}
     )
+
     st.plotly_chart(fig_knn, use_container_width=True)
